@@ -3,7 +3,7 @@
 Hybrid features that we support in this use case - 
 - Develop once, run anywhere. Single code base, multiple uses.
 - De-risk cloud migration. Migrate apps independently instead of doing whole lift & shift.
-- Add cloud workloads/features to existing on-prem data pipelines. This prevents disruption to existing business. Avoids duplication of data pipelines.
+- Add cloud workloads/features to existing on-prem data pipelines. This prevents disruption to existing business. Avoids duplication of data pipelines. Issue - airflow service needs to be available in both pvc and pc for hybrid to work in this context. 
 - Enhancements - Add Denodo partner & build virtual views on on-prem & cloud tables.
 
 ## Use Case - How Cloudera Data Platform (CDP) delivers the best of private and public cloud
