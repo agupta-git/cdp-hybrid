@@ -39,7 +39,7 @@ Below are the steps to replicate a data pipeline from private cloud (**PVC**) to
   - While creating the policy, you will be asked to provide source cluster, source tables, destination cluster and few other initial snapshot settings. If you need help during any step in the process, please visit [Using HBase replication policies](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-pc-hbase-replication-policy.html) and [Creating HBase replication policy](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-pc-hbase-create-policy.html)
   - Sample replication policy for reference -  
     <img width="1114" alt="Screen Shot 2022-06-08 at 2 06 44 PM" src="https://user-images.githubusercontent.com/2523891/172718505-bf993a60-4723-477b-84a8-ec5a2faaa547.png">
-    Please ignore status message in the screen capture. Upon successful setup, it should say Active/Expired.
+    _Please ignore status message in the screen capture. Upon successful setup, it should say Active/Expired._
 
 ### NiFi
 
