@@ -24,6 +24,12 @@ Below are the steps to replicate a data pipeline from private cloud (**PVC**) to
   <img width="1402" alt="Screen Shot 2022-06-07 at 12 17 09 AM" src="https://user-images.githubusercontent.com/2523891/172319541-76adca08-5c1b-432e-9b18-ede0d588c7b1.png">
 
 - Once the PVC cluster is added, proceed to creating policies in Replication Manager.
+- Following replication policies need to be created to support this exercise - 
+  * HDFS Policy  
+    <img width="1123" alt="Screen Shot 2022-06-08 at 11 58 43 AM" src="https://user-images.githubusercontent.com/2523891/172695444-4fd10057-f113-44d0-808d-64add87952fe.png">
+
+  * Hive Policy
+  * HBase Policy
 
 
 ### NiFi
@@ -35,3 +41,6 @@ Below are the steps to replicate a data pipeline from private cloud (**PVC**) to
 ### HBase
 
 ### Data Catalog
+
+## FAQs
+Document common challenges / not-so-best cases
