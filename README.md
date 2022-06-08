@@ -24,13 +24,22 @@ Below are the steps to replicate a data pipeline from private cloud (**PVC**) to
   <img width="1402" alt="Screen Shot 2022-06-07 at 12 17 09 AM" src="https://user-images.githubusercontent.com/2523891/172319541-76adca08-5c1b-432e-9b18-ede0d588c7b1.png">
 
 - Once the PVC cluster is added, proceed to creating policies in Replication Manager.
-- Following replication policies need to be created to support this exercise - 
-  * HDFS Policy  
-    <img width="1123" alt="Screen Shot 2022-06-08 at 11 58 43 AM" src="https://user-images.githubusercontent.com/2523891/172695444-4fd10057-f113-44d0-808d-64add87952fe.png">
+- Create HDFS Policy  
+  - Download the NiFi flow definitions and add it to HDFS directory of your choice.
+  - Now, go to Replication Manager and create an HDFS policy. While creating the policy, you will be asked to provide source cluster, source path, destination cluster, destination path, schedule and few other additional settings. If you need help during any step in the process, please visit [Using HDFS replication policies](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-amazon-s3-replication-in-hdfs.html) and [Creating HDFS replication policy](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-data-in-hdfs.html).
+  - Sample replication policy for reference -  
+     <img width="1123" alt="Screen Shot 2022-06-08 at 11 58 43 AM" src="https://user-images.githubusercontent.com/2523891/172695444-4fd10057-f113-44d0-808d-64add87952fe.png">
 
-  * Hive Policy
-  * HBase Policy
-
+- Create Hive Policy
+  - While creating the policy, you will be asked to provide source cluster, destination cluster, database & tables to replicate, schedule and few other additional settings. In additional settings, ensure "Metadata and Data" is checked under Replication Option. If you need help during any step in the process, please visit [Using Hive replication policies](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-on-premise-to-cloud-in-hive.html) and [Creating Hive replication policy](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-replication-of-data-on-premise-to-amazon-s3-in-hive.html)
+  - Sample replication policy for reference -  
+    <img width="1119" alt="Screen Shot 2022-06-08 at 1 59 01 PM" src="https://user-images.githubusercontent.com/2523891/172716002-1fa93ca3-f728-4723-9f8f-0c5f22773b2f.png">
+  
+- Create HBase Policy
+  - While creating the policy, you will be asked to provide source cluster, source tables, destination cluster and few other initial snapshot settings. If you need help during any step in the process, please visit [Using HBase replication policies](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-pc-hbase-replication-policy.html) and [Creating HBase replication policy](https://docs.cloudera.com/replication-manager/cloud/operations/topics/rm-pc-hbase-create-policy.html)
+  - Sample replication policy for reference -  
+    <img width="1114" alt="Screen Shot 2022-06-08 at 2 06 44 PM" src="https://user-images.githubusercontent.com/2523891/172718505-bf993a60-4723-477b-84a8-ec5a2faaa547.png">
+    Please ignore status message in the screen capture. Upon successful setup, it should say Active/Expired.
 
 ### NiFi
 
