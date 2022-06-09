@@ -53,7 +53,9 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 - Go to Cloudera Data Engineering (CDE), and create a Spark job using PySpark program.
 
 ### Hive
-- 
+- Go to Cloudera Data Warehouse (CDW), and choose Virtual Warehouse of the data lake selected during Hive replication.
+- Now, open Hue editor to access replicated database(s) and table(s).
+- Interested in doing data visualization to gather insights from this data? Check out [cdp-data-pipeline data visualization](https://github.com/agupta-git/cdp-data-pipeline#step-5---setup-cloudera-data-visualization-data-viz-dashboard).
 
 ### HBase
 
