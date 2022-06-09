@@ -67,3 +67,4 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 
 ## FAQs
 Document common challenges / not-so-best cases
+- Data Catalog not being available. JIRA logged.
