@@ -58,6 +58,9 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 ### Data Catalog
 - To ensure PVC cluster shows up as a data lake in PC environment's Data Catalog, please follow instructions given in [Adding CDP Private Cloud Base cluster for use in Replication Manager and Data Catalog](https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-register-cdpdc-knox-option.html).
 - Once configuration is done, Data Catalog in PC environment will let you see data objects available in both PVC cluster and PC environment.
+
+---
+TBD - Airflow... hybrid workloads
 ---
 # ROUGH NOTES
 ## FAQs
