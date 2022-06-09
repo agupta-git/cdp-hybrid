@@ -21,7 +21,7 @@ Following diagram shows a data pipeline in private & public form factors -
 Below are the steps to replicate a data pipeline from private cloud base (**PVC**) cluster to public cloud (**PC**) environment -
 ### Replication Manager
 - Prior to creating replication policies, register private cloud cluster in the public cloud environment. Go to Classic Clusters in CDP PC Management Console and add PVC cluster. In the Cluster Details dialog, select CDP Private Cloud Base option and fill out all the details. If you have Knox enabled in your PVC cluster, check "Register KNOX endpoint (Optional)" box and add the KNOX IP address & port.
-- To ensure PVC cluster works with Replication Manager in PC environment, please follow instructions given in [Adding CDP Private Cloud Base cluster for use in Replication Manager](https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-register-cdpdc-cm-option.html).
+- To ensure PVC cluster works with Replication Manager in PC environment, please follow instructions given in [Adding CDP Private Cloud Base cluster for use in Replication Manager and Data Catalog](https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-register-cdpdc-knox-option.html).
 - For more details on adding & managing classic clusters, please visit [Managing classic clusters](https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-managing-classic-clusters.html).
   <img width="1402" alt="Screen Shot 2022-06-07 at 12 17 09 AM" src="https://user-images.githubusercontent.com/2523891/172319541-76adca08-5c1b-432e-9b18-ede0d588c7b1.png">
 - Once the PVC cluster is added, proceed to creating policies in Replication Manager.
@@ -62,6 +62,9 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 - Now, open Hue editor to access replicated table(s).
 
 ### Data Catalog
+- To ensure PVC cluster shows up as a data lake in PC environment's Data Catalog, please follow instructions given in [Adding CDP Private Cloud Base cluster for use in Replication Manager and Data Catalog](https://docs.cloudera.com/management-console/cloud/classic-clusters/topics/mc-register-cdpdc-knox-option.html).
+- Once configuration is done, Data Catalog in PC environment will let you see data objects available in both PVC cluster and PC environment.
+- Please note since we've replicated all data objects to PC environment in this exercise, seeing PVC cluster's data lake in Data Catalog wouldn't show anything relevant. But there are many other use cases where this consolidation in [Data Catalog](https://www.cloudera.com/products/sdx/data-catalog.html) is extremely helpful.
 
 ## FAQs
 Document common challenges / not-so-best cases
