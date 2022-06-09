@@ -44,7 +44,7 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 
 ### NiFi
 - Download NiFi flow definition from PVC cluster on your local machine.
-- Go to Cloudera DataFlow (CDF) on PC environment and import the flow defintion.
+- Go to Cloudera DataFlow (CDF) in PC environment and import the flow defintion.
 - **Update the NiFi flow to use PutS3Object processor instead of PutHDFS processor.** Update properties in this processor to use desired S3 bucket. With this change, you will start storing incoming files in AWS S3 bucket instead of PVC HDFS directory. For any help with PutS3Object processor, please see [cdp-data-pipeline nifi flow](https://github.com/agupta-git/cdp-data-pipeline#step-1---setup-nifi-flow).
 - Once updates are done, re-import NiFi flow as a newer version and deploy it.
 
@@ -53,11 +53,13 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 - Go to Cloudera Data Engineering (CDE), and create a Spark job using PySpark program.
 
 ### Hive
-- Go to Cloudera Data Warehouse (CDW), and choose Virtual Warehouse of the data lake selected during Hive replication.
+- Go to Cloudera Data Warehouse (CDW) in PC environment, and choose Virtual Warehouse of the data lake selected during Hive replication.
 - Now, open Hue editor to access replicated database(s) and table(s).
 - Interested in doing data visualization to gather insights from this data? Check out [cdp-data-pipeline data visualization](https://github.com/agupta-git/cdp-data-pipeline#step-5---setup-cloudera-data-visualization-data-viz-dashboard).
 
 ### HBase
+- Go to Cloudera Operational Database (COD) in PC environment, and choose database selected during HBase replication.
+- Now, open Hue editor to access replicated table(s).
 
 ### Data Catalog
 
