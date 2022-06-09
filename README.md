@@ -49,10 +49,11 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 - Once updates are done, re-import NiFi flow as a newer version and deploy it.
 
 ### Spark
-- Update the PySpark program to use AWS S3 bucket instead of PVC HDFS directory.
-- Go to Cloudera Data 
+- **Update the PySpark program to use AWS S3 bucket instead of PVC HDFS directory.**
+- Go to Cloudera Data Engineering (CDE), and create a Spark job using PySpark program.
 
 ### Hive
+- 
 
 ### HBase
 
