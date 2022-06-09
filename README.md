@@ -64,7 +64,6 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 Document common challenges / not-so-best cases
 - Data Catalog not being available. JIRA logged.
 - Airflow service not available in PVC base cluster. This prevents Airflow DAG to work in a hybrid env.
-- DS to DS is in the roadmap
 
 Enhancements - Add Denodo partner & build virtual views on on-prem & cloud tables.
 
