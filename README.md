@@ -1,5 +1,5 @@
 # How Cloudera Data Platform (CDP) excels at hybrid data cloud use cases
-Through data pipeline migration exercise, let's explore how CDP excels at the following hybrid data use cases - 
+Through data pipeline migration exercise, let's explore how CDP excels at the following hybrid cloud use cases - 
 - Develop Once and Run Anywhere
 - De-risk Cloud Migration
 
