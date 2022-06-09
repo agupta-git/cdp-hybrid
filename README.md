@@ -55,7 +55,7 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 ### Hive
 - Go to Cloudera Data Warehouse (CDW) in PC environment, and choose Virtual Warehouse of the data lake selected during Hive replication.
 - Now, open Hue editor to access replicated database(s) and table(s).
-- Interested in doing data visualization to gather insights from this data? Check out [cdp-data-pipeline data visualization](https://github.com/agupta-git/cdp-data-pipeline#step-5---setup-cloudera-data-visualization-data-viz-dashboard).
+- Interested in gathering insights from this data? Check out [cdp-data-pipeline data visualization](https://github.com/agupta-git/cdp-data-pipeline#step-5---setup-cloudera-data-visualization-data-viz-dashboard).
 
 ### HBase
 - Go to Cloudera Operational Database (COD) in PC environment, and choose database selected during HBase replication.
