@@ -1,5 +1,5 @@
-# How Cloudera Data Platform (CDP) excels at hybrid data cloud use cases
-Through data pipeline migration (TBD) exercise, let's explore how CDP excels at the following hybrid cloud use cases - 
+# How Cloudera Data Platform (CDP) excels at hybrid use cases
+Through data pipeline replication exercise, let's explore how CDP excels at the following hybrid use cases - 
 - Develop Once and Run Anywhere
 - De-risk Cloud Migration
 
@@ -60,17 +60,6 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 - Once configuration is done, Data Catalog in PC environment will let you see data objects available in both PVC cluster and PC environment.
 
 ---
-TBD - Airflow... hybrid workloads
----
-# ROUGH NOTES
-## FAQs
-Document common challenges / not-so-best cases
-- Data Catalog not being available. JIRA logged.
-- Airflow service not available in PVC base cluster. This prevents Airflow DAG to work in a hybrid env.
-
-Enhancements - Add Denodo partner & build virtual views on on-prem & cloud tables.
-
-Hybrid features that we support in this use case - 
-- Develop once, run anywhere. Single code base, multiple uses.
-- De-risk cloud migration. Migrate apps independently instead of doing whole lift & shift.
-- Add cloud workloads/features to existing on-prem data pipelines. This prevents disruption to existing business. Avoids duplication of data pipelines. Issue - airflow service needs to be available in both pvc and pc for hybrid to work in this context. 
+## Future enhancements to showcase more hybrid capabilities
+1. Airflow DAGs have an ability to implement hybrid data pipeline by triggering jobs on PVC cluster and PC environment. For instance, Cloudera Machine Learning (CML) jobs are triggered on PC environment, while all the data preparation jobs are triggered on PVC cluster.
+2. Integrate with a partner product, Denodo, to build Final views on top of Hive tables in both PVC cluster and PC environment. End consumer gets the desired outcome without any unnecessary data replication.
