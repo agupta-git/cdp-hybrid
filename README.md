@@ -38,7 +38,7 @@ Below are the steps to replicate a data pipeline from private cloud base (**PVC*
 
 ### NiFi
 - Download NiFi flow definition from PVC cluster on your local machine.
-- Go to Cloudera DataFlow (CDF) in PC environment and import the flow defintion.
+- Go to Cloudera DataFlow (CDF) in PC environment and import the flow definition.
 - **Update the NiFi flow to use PutS3Object processor instead of PutHDFS processor.** Update properties in this processor to use desired S3 bucket. With this change, you will start storing incoming files in AWS S3 bucket instead of PVC HDFS directory. For any help with PutS3Object processor, please see [cdp-data-pipeline nifi flow](https://github.com/agupta-git/cdp-data-pipeline#step-1---setup-nifi-flow).
 - Once updates are done, re-import NiFi flow as a newer version and deploy it.
 
